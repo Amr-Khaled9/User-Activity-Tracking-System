@@ -15,6 +15,7 @@ Route::get('/', AuthController::class)->name('login');
 
 
 Route::get('/dashboard', DashboardController::class)->name('dashboard')->middleware('auth');
+// Route::post('/events',[DashboardController::class,'receivingData']);
 
 Route::post('/logout', function () {
     FacadesAuth::logout();
