@@ -12,21 +12,13 @@ use Livewire\Component;
 
 class DashboardController extends Component
 {
-    public $logins;
-    public $logouts;
-    public $clicks;
-    public $pageviews;
-
-    public function mount()
-    {
-        // تجيب عدد كل نوع من الأحداث
-        $this->logins = Event::where('action', 'login')->count();
-        $this->logouts = Event::where('action', 'logout')->count();
-        $this->clicks = Event::where('action', 'click')->count();
-        $this->pageviews = Event::where('action', 'pageview')->count();
-    }
     public function render()
     {
-        return view('components.dashboard');
+        return view('components.dashboard', [
+            'logins' => Event::where('action', 'login')->count(),
+            'logouts' => Event::where('action', 'logout')->count(),
+            'clicks' => Event::where('action', 'click')->count(),
+            'pageviews' => Event::where('action', 'view')->count(),
+        ]);
     }
 }

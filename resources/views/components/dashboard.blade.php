@@ -13,7 +13,7 @@
     </nav>
 
     <!-- KPI Cards -->
-    <div class="kpi-container" wire:poll.5s>
+    <div class="kpi-container" wire:poll.1s>
         <div class="kpi-card">
             <h3>Logins</h3>
             <p>{{ $logins ?? 0 }}</p>
