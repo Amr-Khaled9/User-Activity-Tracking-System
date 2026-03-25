@@ -38,5 +38,5 @@
 
 - **Backend:** Laravel 12, Redis, MySQL  
 - **Frontend:** Livewire, Blade, Tailwind CSS  
-- **Dev Tools:** Docker (optional), Queue Worker  
+- **Dev Tools:** Docker, Queue Worker  
 - **Testing:** Load testing via cURL or Postman Runner
