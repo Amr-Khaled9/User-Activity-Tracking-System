@@ -16,7 +16,7 @@ Dashboard
 
 <p align="center"> <img src="public/test1.png" width="700" alt="Test Screenshot"> </p>
 
-<p align="center"> <img src="public/test12.png" width="700" alt="Test Screenshot"> </p>
+<p align="center"> <img src="public/test2.png" width="700" alt="Test Screenshot"> </p>
 
 
 Tech Stack
